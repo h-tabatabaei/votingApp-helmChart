@@ -1,0 +1,6 @@
+"This Helm Chart Will install {{ .Release.Name | upper }} POD with corresponding Service."
+1. Get the application URL by running these commands:
+   http://kubernetesNodeIpAddres:{{ .Values.service.nodePort}}
+2. next step is installing result app by running:
+   helm install result-app repoName/result-app
+   
